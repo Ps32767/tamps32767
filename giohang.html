@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="img/download.png" alt="Avatar Logo"
+                    style="width:40px;" class="rounded-pill"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="t1.html">Trang chu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">San pham</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="giohang.html">Gio hang</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Hang xe</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">BMW</a></li>
+                            <li><a class="dropdown-item" href="#">Ferrari</a></li>
+                            <li><a class="dropdown-item" href="#">Bugatti</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:50%">Tên sản phẩm</th>
+                    <th style="width:10%">Giá</th>
+                    <th style="width:8%">Số lượng</th>
+                    <th style="width:22%" class="text-center">Thành tiền</th>
+                    <th style="width:10%"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="img/1.jpg" alt="Sản phẩm 1" class="img-responsive"
+                                    width="100">
+                            </div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">Sản phẩm 1</h4>
+                                <p>Mô tả của sản phẩm 1</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">200.000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"
+                            fdprocessedid="kldl1j">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">200.000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm" fdprocessedid="d1cq9"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" fdprocessedid="tj1g9c"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="img/1.jpg" alt="Sản phẩm 1" class="img-responsive"
+                                    width="100">
+                            </div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">Sản phẩm 2</h4>
+                                <p>Mô tả của sản phẩm 2</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">300.000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"
+                            fdprocessedid="80xitf">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">300.000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm" fdprocessedid="7m971s"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" fdprocessedid="nutkc"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="visible-xs">
+                    <td class="text-center"><strong>Tổng 200.000 đ</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="t1.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp
+                            tục mua hàng</a>
+                    </td>
+                    <td colspan="2" class="hidden-xs"> </td>
+                    <td class="hidden-xs text-center"><strong>Tổng tiền 500.000 đ</strong>
+                    </td>
+                    <td><a href="#" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <table class="table table-borderless" style="text-align: center">
+        <thead>
+            <tr>
+                <th>Cac hang xe</th>
+                <th>Thong tin lien he</th>
+                <th>Cac san pham khac</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#">BMW</a></td>
+                <td>012345678</td>
+                <td><a href="#">Gang tay</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Ferrari</a></td>
+                <td>mary@example.com</td>
+                <td><a href="#">Ao khoac</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Bugatti</a></td>
+                <td></td>
+                <td><a href="#">Mu bao hiem</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
